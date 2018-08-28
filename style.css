@@ -1,0 +1,553 @@
+.color_white{
+	color: #ffffff;
+}
+.cursor{
+	cursor: pointer;	
+}
+#clearfix {
+    clear: both;
+}
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+     font-style: normal;
+}
+
+header {
+    width: 100%;
+    height: 120vh;
+    background: url(img/martabg.jpg);
+    background-size: cover;
+    margin-top: -60px;
+}
+
+header #pink {
+    background: #cda99d94;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    position: relative;
+}
+
+.cart {
+    position: fixed;
+    float: left;
+    text-transform: uppercase;
+    margin: 16px 32px;
+    left: 30%;
+    font-size: 13px;
+    letter-spacing: .15em;
+    padding-top: 6px;
+}
+
+.logo1 {
+    position: fixed;
+    font-size: 28px;
+    float: left;
+    text-transform: uppercase;
+    letter-spacing: .21em;
+    line-height: 1em;
+    margin: 16px 32px;
+    left: 46%;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style-type: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    transition: 1s;
+    text-align: center;
+    width: 50%;
+    float: left;
+}
+
+nav.black ul {
+    background: #cda99d;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+}
+
+.menu-icon {
+    width: 100%;
+    background: #cda99d;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .cart {
+        position: fixed;
+        top: 0;
+        margin-top: 14px;
+        left: 0;
+    }
+    .logo1 {
+        position: fixed;
+        top: 0;
+        margin-top: 14px;
+        left: 30%;
+    }
+
+    nav ul {
+        max-height: 0;
+        background: #cda99d;
+        width: 100%;
+        height: 100vh;
+    }
+    nav.black ul {
+        background: #cda99d;
+    }
+    .show {
+        max-height: 12em;
+    }
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 30px 0;
+        text-align: center;
+        float: none;
+        
+    }
+  
+    nav ul li a {
+    	 font-size: 30px;
+    	border-bottom: 1px solid #fff;
+    }
+}
+
+.h1 {
+    width: 40%;
+    height: 40%;
+    text-align: center;
+    position: relative;
+    top: 38%;
+    left: 32%;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 80px;
+    letter-spacing: .05em;
+    line-height: 1.6em;
+}
+
+.h1 .button {
+    padding: 10px 25px;
+    border: 2px solid white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: .2em;
+}
+
+.h1 .button:hover {
+    background: #fff;
+    color: black;
+}
+
+#gallery {
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+}
+
+#gallery .rightmain {
+    box-sizing: border-box;
+    width: 65%;
+    float: left;
+    margin: 0;
+    position: relative;
+    height: 1505px;
+    padding: 5px;
+}
+
+#gallery .rightmain img {
+    width: 100%;
+    height: 1505px;
+}
+
+#gallery .lefttmain {
+    box-sizing: border-box;
+    width: 35%;
+    float: right;
+    height: 1500px;
+    margin: 0;
+    position: relative;
+}
+
+#gallery .lefttmain div {
+    position: relative;
+    height: 750px;
+    padding: 5px 5px 0 0;
+}
+
+
+
+#gallery .buttongallery {
+    background: white;
+    color: #4E4E4E;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    line-height: 1.4em;
+    margin: 0;
+    font-size: 8px;
+    padding: 0 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+#gallery .lefttmain img {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 750px;
+}
+
+#season {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background: #FFFFFF;
+}
+
+#content {
+    width: 92%;
+    height: 92%;
+    position: relative;
+    top: 4%;
+    left: 4%;
+    text-align: center;
+    padding-top: 70px;
+}
+
+#content h3 {
+    font-size: 32px;
+    letter-spacing: .05em;
+    line-height: 1.4em;
+    text-transform: none;
+    color: #d1d1d1;
+}
+
+#content p {
+    font-family: 'EB Garamond', serif;
+    font-size: 24px;
+    letter-spacing: .05em;
+    line-height: 1.7em;
+    text-transform: none;
+    color: rgba(61, 61, 61, .6);
+    width: 64%;
+    margin-left: 21%;
+}
+
+#content .line {
+    height: 50px;
+    width: 1px;
+    background: #D1D1D1;
+    position: relative;
+    left: 50%;
+    margin: 30px 0;
+}
+
+#content a {
+    color: #d1d1d1;
+    font-size: 18px;
+    letter-spacing: .04em;
+    line-height: 1.8em;
+    text-transform: none;
+    text-decoration: none;
+    padding-bottom: .05em;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(209, 209, 209, .3);
+    transition: border-color .15s ease-out, color .15s ease-out;
+}
+
+#content a:hover {
+    opacity: 0.6;
+}
+
+#fw15 {
+    width: 100%;
+    height: 95vh;
+    background: url(img/martabg2.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+#fw15 #pink {
+    background: #cda99d94;
+    width: 100%;
+    height: 100%;
+}
+
+#fw15 #pink .h1 {
+    position: relative;
+    top: 30%;
+    left: 29%;
+}
+
+#foto {
+    width: 100%;
+    height: 160vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-top: 80px;
+}
+
+#foto .picture {
+    width: 25%;
+    float: left;
+}
+
+#foto h3 {
+    margin-bottom: 90px;
+}
+
+#foto .picture img {
+    width: 100%;
+    height: 100%;
+}
+
+#foto .emailmarta {
+    font-size: 32px;
+}
+
+footer {
+    width: 100%;
+    height: 80vh;
+    background: #f5efec;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#footermain {
+    width: 92%;
+    height: 30%;
+    position: relative;
+    top: 4%;
+    left: 4%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;  
+}
+
+#footermain .footerblock {
+    width: 90px;
+    height: 180px;
+    float: left;
+    margin-right: 70px;
+}
+
+#footermain .footerform {
+    width: 250px;
+    height: 180px;
+    float: left;
+    text-align: left;
+}
+
+#footermain .footerblock,
+#footermain .footerform,
+#footerlink {
+    text-transform: none;
+}
+
+.footerblock p {
+    font-size: 18px;
+    letter-spacing: 0em;
+    line-height: 1em;
+}
+
+.footerblock a {
+    font-size: 13px;
+    letter-spacing: .1em;
+    line-height: 1.5em; 
+}
+
+#footermain a, #footerlink a{
+	color: #222;
+	 text-decoration: none;
+}
+
+.footerform h2 {
+    font-size: 30px;
+    line-height: 1.2em;
+    letter-spacing: .05em;
+}
+
+.footerform input {
+    font-size: 15px;
+    padding: 1em;
+    line-height: normal;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, .12);
+    margin-top: 10px;
+}
+
+.footerform button {
+    color: #cda99d;
+    border: 1px solid #cda99d;
+    background: #f5efec;
+    transition: 0.1s background-color linear, 0.1s color linear;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 1em 2.5em;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    font-size: 14px;
+    line-height: normal;
+    font-weight: normal;
+    margin-top: 25px;
+}
+
+.footerform button:hover {
+    background: #cda99d;
+    color: #000000;
+}
+
+#footerlink {
+    font-size: 18px;
+    letter-spacing: .04em;
+    line-height: 1.8em;
+    margin-top: 140px;
+    padding-left: 60px;
+}
+
+#footerlink a {
+    
+    padding-bottom: .05em;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(34, 34, 34, .3);
+}
+
+
+
+@media screen and (max-device-width: 700px) {
+    body {
+        margin: 0 auto;
+    }
+    header {
+        height: 40vh;
+        margin-top: 48px;
+    }
+    nav {
+        padding-top: 0;
+    }
+    .menu-icon {
+        display: block;
+    }
+    nav a {
+        padding: 0;
+        font-size: 10px;
+    }
+    #fw15 {
+        height: 40vh;
+    }
+    .h1 {
+        width: 100%;
+        height: 100%;
+        top: 35%;
+        left: 0%;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .h1 .button {
+        font-size: 16px;
+    }
+    #fw15 #pink .h1 {
+        left: 0;
+    }
+    #gallery .rightmain {
+        width: 100%;
+        height: 500px;
+        float: none;
+        padding: 7px 0;
+    }
+    #gallery .rightmain img {
+        height: 500px;
+    }
+    #gallery .lefttmain {
+        width: 100%;
+        height: 1000px;
+        float: none;
+        margin-top: 0;
+    }
+    #gallery .lefttmain div {
+        height: 500px;
+        padding: 7px 0px 0 0;
+    }
+    #gallery .lefttmain img {
+        height: 500px;
+        padding: 7px 0;
+    }
+    #season {
+        height: 100%;
+    }
+    #content {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 0%;
+        left: 0%;
+    }
+    #content p {
+        width: 96%;
+        margin: 2%;
+    }
+    #foto .picture {
+        width: 50%;
+    }
+    footer {
+        height: 100%;
+    }
+    #footerlink p {
+        padding: 70px 70px 10px 70px;
+        margin: 0;
+    }
+    #footermain .footerblock {
+        margin-right: 45px;
+    }
+}
